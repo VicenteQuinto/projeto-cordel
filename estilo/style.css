@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+
+/*FONTES UTILIZADAS NO PROJETO PEGAS NO GOOGLE FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', cursive;
+    --fonte3:'Sriracha', cursive;
+
+    /*CORES UTILIZADAS NO PROJETO*/
+
+    --cor1:#000000;
+    --cor2:#a9a9a9;
+    --cor3:#ffffff;
+    --cor4:#00000070;
+    --cor5:#363636;
+
+
+}
+
+/*Configurações Globais*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html,body{
+    min-height: 100vh;
+    background-color: var(--cor2);
+    font-family: var(--fonte1);
+}
+header{
+    background-color:var(--cor1);
+    color:var(--cor3);
+    text-align: center;
+}
+header > h1{
+    font-size: 10vw;/*Configura a fonte automaticamente  para a largura da tela. Não é a melhor opção, porem funciona*/
+    padding-top: 50px;
+    font-family: var(--fonte2);
+    font-variant: small-caps;/*Transforma as letras em maiuscula, porém da enfase nas primeiras letras iniciais*/
+    /*text-transform: uppercase; Trasnforma as letras em maiuscula*/
+}
+header > p{
+    padding-bottom: 50px;
+    
+}
+header a, footer a{
+    text-decoration: none;
+    color:var(--cor3);
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;    
+    
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em; /*Espaçamento entre linhas*/
+    font-family: var(--fonte3);
+    font-size: 2.5vw;/*Configura a fonte automaticamente  para a largura da tela. Não é a melhor opção, porem funciona*/
+    
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color:var(--cor3);
+    color:var(--cor1);
+}
+
+section.imagem{
+    background-color: var(--cor5);
+    color:var(--cor3);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment:fixed;/*O fixed fixa a imagem no fundo para quando rolar o mouse ela ficar fixa movendo 
+    apenas o conteudo*/
+}
+
+section.imagem > p{
+    /*width: 400px;. Foi colocado para ficar um quadrado na section*/
+    background-color:var(--cor4);
+    display: inline-block;/* Se adapta ao tamanho da caixa do conteudo onte foi colocado a width*/
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;/*Coloca sombra no texto*/
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    
+
+}
+
+footer{
+    background-color:var(--cor1);
+    text-align: center;
+    color:var(--cor3);
+    padding: 10px ;
+}
