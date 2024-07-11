@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    /*]Aqui sãos as configurações globais. Estamos zerando todas as configurações de todos os elementos.*/
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+
+html,
+body {
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header>h1 {
+    font-size: 10vw;/*Essa medida vw é um recurso para a fonte acomapnha o tamanho da tela.*/
+    font-family: var(--fonte2);
+    padding-top: 50px;
+    /*text-transform: uppercase;Transforma todas as letras em MAIUSCULAS*/
+    /*text-transform: lowercase;Transforma todas as letras em minusculas*/
+    font-variant: small-caps;
+    /*Transforma todas as letras em Maiusculas dando destaque para 1ª letra da palavra */
+}
+
+header>p {
+    padding-bottom: 50px;
+    /*Aumenta o tamanho do padding inferior do parágrafo*/
+}
+
+header a,
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    /*Tira o sublinhado do link*/
+    font-weight: bolder;
+    /*Deixa em negrito o texto do link*/
+    border-radius: 5px;
+    padding: 3px;
+}
+
+header a:hover,
+footer a:hover {
+    /*text-decoration: underline;*/
+    background-color: rgb(77, 77, 77);
+    transition: 0.5s;
+}
+
+section {
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 1.5em;
+    font-family: var(--fonte3);/*Espaçamento entre as linhas*/
+    background-position: right center;
+    
+}
+
+section>p{
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: rgb(0, 0, 0);
+
+
+}
+
+section.imagem{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    box-shadow:inset 6px 6px 13px 0px rgba(0, 0, 0, 0.658);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section#img1{
+    background-image: url('../imagens/background001.jpg');
+    
+}
+section#img2{
+    background-image: url('../imagens/background002.jpg');
+    
+}
+
+section.imagem>p {
+    display: inline-block;
+    /*width: 400px;*/
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: 10px;
+    padding: 12px;
+    text-shadow: 1px 1px 0px black;
+   
+
+
+}
+
+footer {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
